@@ -30,10 +30,12 @@ for(i=0; i < 5; i++){
   var nome = String(prompt("Olá, qual o seu nome?"))
   var senha = parseInt(prompt("Seja bem-vindo(a) " + nome + ", agora digite a sua senha de três números."))
   if(senha === 123){
-    document.write("Acesso Permitido!")
+   alert("Acesso Permitido!")
     break
   }else{
     alert("Senha inválida, tente outra vez")
   }
 }
-  document.write("Você excedeu o limite de tentativas. Tente outra vez mais tarde!")  
+ if (i === 3) {
+  alert("Excedeu o limite de tentativas.");
+}
