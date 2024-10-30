@@ -36,6 +36,6 @@ for(i=0; i < 5; i++){
     alert("Senha incorreta. tente outra vez!")
   }
 }
- if (i === 3) {
+ if (i === 5) {
   alert("Excedeu o limite de tentativas.");
 }
