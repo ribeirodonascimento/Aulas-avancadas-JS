@@ -50,3 +50,17 @@ Sexo: 'f' ou 'm';
 Estado Civil: 's', 'c', 'v', 'd'.
 Dica: se sua variável é texto, o tamanho dela está armazenado em: texto.length
 
+var nome = String(prompt("Olá, qual o seu nome?"))
+var idade = parseInt(prompt("Digite a sua idade."))
+var salario = parseFloat(prompt("Digite o valor do seu salário."))
+var sexo = String(prompt("Qual o seu sexo? digite 'M' para masculino ou 'F' para feminino."))
+var estadoCivil = String(prompt("Qual o seu estado civil? digite 'S' para solteiro(a), 'C' para casado(a), 'V' para viúvo(a) ou 'D' para divorciado."))
+document.write(`Nome: ${nome} <br>`)
+document.write(`Idade: ${idade} <br>`)
+document.write(`Salário: ${salario} <br>`)
+document.write(`Sexo: ${sexo} <br>`)
+document.write(`Estado Civil: ${estadoCivil} <br>`)
+
+
+5- 
+
