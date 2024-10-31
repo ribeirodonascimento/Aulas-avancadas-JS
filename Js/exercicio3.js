@@ -43,12 +43,12 @@ for(i=0; i < 5; i++){
 
 
 4- Faça um programa que leia e valide as seguintes informações:
-Nome: maior que 3 caracteres;
-Idade: entre 0 e 150;
-Salário: maior que zero;
-Sexo: 'f' ou 'm';
-Estado Civil: 's', 'c', 'v', 'd'.
-Dica: se sua variável é texto, o tamanho dela está armazenado em: texto.length
+   Nome: maior que 3 caracteres;
+   Idade: entre 0 e 150;
+   Salário: maior que zero;
+   Sexo: 'f' ou 'm';
+   Estado Civil: 's', 'c', 'v', 'd'.
+   Dica: se sua variável é texto, o tamanho dela está armazenado em: texto.length
 
 var nome = String(prompt("Olá, qual o seu nome?"))
 var idade = parseInt(prompt("Digite a sua idade."))
@@ -62,5 +62,6 @@ document.write(`Sexo: ${sexo} <br>`)
 document.write(`Estado Civil: ${estadoCivil} <br>`)
 
 
-5- 
+5- Supondo que a população de um país A seja de 80.000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja de 200.000 habitantes com uma taxa de crescimento de 1,5%. 
+   faça um programa que calcule o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 
