@@ -51,7 +51,9 @@ for(i=0; i < 5; i++){
    Dica: se sua variável é texto, o tamanho dela está armazenado em: texto.length
 
 var nome = String(prompt("Olá, qual o seu nome?"))
+for(i = 0; i < 5; i++){
 var idade = parseInt(prompt("Digite a sua idade."))
+if(idade >= 0 && idade <= 150){
 var salario = parseFloat(prompt("Digite o valor do seu salário."))
 var sexo = String(prompt("Qual o seu sexo? digite 'M' para masculino ou 'F' para feminino."))
 var estadoCivil = String(prompt("Qual o seu estado civil? digite 'S' para solteiro(a), 'C' para casado(a), 'V' para viúvo(a) ou 'D' para divorciado."))
@@ -60,6 +62,14 @@ document.write(`Idade: ${idade} <br>`)
 document.write(`Salário: ${salario} <br>`)
 document.write(`Sexo: ${sexo} <br>`)
 document.write(`Estado Civil: ${estadoCivil} <br>`)
+break
+}else{
+  alert("Digite uma idade entre 0 e 150.")
+}
+}
+if(i == 5){
+  alert("Você atingiu o número máximo de tentativas.")
+}
 
 
 5- Supondo que a população de um país A seja de 80.000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja de 200.000 habitantes com uma taxa de crescimento de 1,5%. 
