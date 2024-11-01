@@ -10,10 +10,9 @@ for(tentativas = 0; tentativas < 3; tentativas++){
   alert("Nota inválida! Digite uma nota entre 0 e 10.")
 }
  }
-if (nota < 0 || nota > 10 || isNaN(nota)) {
+if (nota < 0 || nota > 10) {
     alert("Você excedeu o número de tentativas.");
 }
-
 
 
 2- Crie um loop que imprima todos os números de 1 a 100.
