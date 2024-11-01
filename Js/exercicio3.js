@@ -75,3 +75,31 @@ if(i == 5){
 5- Supondo que a população de um país A seja de 80.000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja de 200.000 habitantes com uma taxa de crescimento de 1,5%. 
    faça um programa que calcule o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 
+var paisA = 80.000
+var txCrescA = 0.03
+var paisB = 200.000
+var txCrescB = 0.015
+var anos = 0
+while(paisA < paisB) {
+  paisA += paisA * txCrescA;
+  paisB += paisB * txCrescB;
+  anos++;
+}
+document.write("O número de anos necessários para que a população de A ultrapasse ou iguale a população de B é de:", anos + " anos.");
+
+
+6- Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
+
+var paisA = parseFloat(prompt("Informe a quantidade de habitantes do país A."))
+var txCrescA = parseFloat(prompt("Informe a taxa de crescimento anual dos habitantes do país A."))
+var paisB = parseFloat(prompt("Informe a quantidade de habitantes do país B."))
+var txCrescB = parseFloat(prompt("Informe a taxa de crescimento anual dos habitantes do país B."))
+var anos = 0
+while(paisA < paisB) {
+  paisA += paisA * txCrescA;
+  paisB += paisB * txCrescB;
+  anos++;
+}
+document.write("O número de anos necessários para que a população de A ultrapasse ou iguale a população de B é de: ", anos + " anos.");
+
+
