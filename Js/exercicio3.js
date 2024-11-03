@@ -102,3 +102,35 @@ while(paisA < paisB) {
 document.write("O número de anos necessários para que a população de A ultrapasse ou iguale a população de B é de: ", anos + " anos.");
 
 
+7- Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
+
+  for(i = 1; i < 21; i++){
+    document.write(i + "<br>")
+}
+  for(i = 1; i < 21; i++){
+    document.write(i + " ")
+}
+
+
+8- Faça um programa que leia 5 números e informe o maior número.
+
+  var numeros = []
+    for(i = 1; i < 6; i++){
+      var numero = parseInt(prompt("Digite o " + i + "º" + " número"))
+      numeros.push(numero)
+    }
+      var maiorNumero = Math.max(...numeros)
+      document.write("Os números digitados foram: " + numeros + "<br>")
+      document.write("E o maior número digitado foi o " + maiorNumero + ".")
+
+
+9- Faça um programa que leia 5 números e informe a soma e a média dos números.
+
+  var numeros = []
+  for(i = 1; i < 6; i++){
+    var numero = parseInt(prompt("Digite o " + i + "º" + " número"))
+    numeros.push(numero)
+  }
+    var soma = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4] 
+    var media = (numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4]) / numeros.length
+    document.write("A soma dos números digitados é " + soma + " e a média é " + media + ".")
