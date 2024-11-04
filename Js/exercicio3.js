@@ -171,10 +171,10 @@ document.write(`A soma dos dois numeros é : ${soma}`)
 
 13- Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 e 10. O usuário deve informar de qual número ele deseja ver a tabuada.
 
-  var num = parseInt(prompt("De 1 a 10, qual a tabuada você quer ver?"))
-    for(i = 1; i <= 10; i++){
+  var num = parseInt(prompt("Digite o número da tabuada que você quer ver."))
+    for(i = 1; i < 11; i++){
     var resultado = num * i
-    document.write(num + "x" + i + "=" + resultado + "<br>" )
+    document.write(num + " x " + i + " = " + resultado + "<br>" )
 }
 
   
