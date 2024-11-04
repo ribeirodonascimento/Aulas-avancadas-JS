@@ -134,3 +134,47 @@ document.write("O número de anos necessários para que a população de A ultra
     var soma = numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4] 
     var media = (numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4]) / numeros.length
     document.write("A soma dos números digitados é " + soma + " e a média é " + media + ".")
+
+
+10- Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+
+for(i= 0; i < 51; i++){
+  if(i % 2 == 1){
+    document.write(i + "<br>")
+  }
+}
+
+
+11- Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+
+  var num1 = parseInt(prompt("Digite um número"))
+  var num2 = parseInt(prompt("Agora digite outro número"))
+    for(i = num1 + 1; i < num2; i++){
+      if(i % 1 == 0){
+      document.write(i + "<br>")
+  }
+}
+
+
+12- Altere o programa anterior para mostrar no final a soma dos números.
+
+  var num1 = parseInt(prompt("Digite um número"))
+  var num2 = parseInt(prompt("Agora digite outro número"))
+  var soma = num1 + num2
+    for(i = num1 + 1; i < num2; i++){
+      if(i % 1 == 0){
+      document.write(i + "<br>")
+  }
+}
+document.write(`A soma dos dois numeros é : ${soma}`)
+
+
+13- Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 e 10. O usuário deve informar de qual número ele deseja ver a tabuada.
+
+  var num = parseInt(prompt("De 1 a 10, qual a tabuada você quer ver?"))
+    for(i = 1; i <= 10; i++){
+    var resultado = num * i
+    document.write(num + "x" + i + "=" + resultado + "<br>" )
+}
+
+  
