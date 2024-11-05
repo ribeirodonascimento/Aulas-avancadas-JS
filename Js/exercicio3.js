@@ -180,4 +180,10 @@ document.write(`A soma dos dois numeros é : ${soma}`)
   
 14- Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
 
-  
+  var base = parseInt(prompt("Digite o valor da base."))
+  var expoente = parseInt(prompt("Digite o valor do expoente."))
+  var resultado = Math.pow (base,expoente) 
+    document.write(`O número ${base} elevado ao número ${expoente} é igual a ${resultado}.`)
+
+
+15- 
