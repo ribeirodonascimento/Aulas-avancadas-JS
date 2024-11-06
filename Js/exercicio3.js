@@ -187,3 +187,19 @@ document.write(`A soma dos dois numeros é : ${soma}`)
 
 
 15- 
+// >Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares
+// var numeros = []
+// alert("Preciso que voce digite 10 números.")
+// for(i = 1; i < 11; i++){
+// var numero = parseInt(prompt("Digite o " + i + "º número."))
+// numeros.push(numero)
+// }
+// document.write(numeros + "<br>")
+
+
+for()
+if(numeros % 2 == 0){
+  document.write(numeros)
+}else{
+  document.write("não é par")
+}
