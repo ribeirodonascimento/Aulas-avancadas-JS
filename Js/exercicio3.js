@@ -203,3 +203,23 @@ if(numeros % 2 == 0){
 }else{
   document.write("não é par")
 }
+________________________________________________________
+
+let contagemPares = 0;
+let contagemImpares = 0;
+
+// Pedir para o usuário digitar 10 números
+for (let i = 0; i < 10; i++) {
+    let numero = parseInt(prompt("Digite um número inteiro:"));
+
+    // Verificar se o número é par ou ímpar
+    if (numero % 2 === 0) {
+        contagemPares++;
+    } else {
+        contagemImpares++;
+    }
+}
+
+// Mostrar o resultado
+document.write(`Quantidade de números pares: ${contagemPares} <br>`);
+document.write(`Quantidade de números ímpares: ${contagemImpares}`);
