@@ -186,40 +186,36 @@ document.write(`A soma dos dois numeros é : ${soma}`)
     document.write(`O número ${base} elevado ao número ${expoente} é igual a ${resultado}.`)
 
 
-15- 
-// >Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares
-// var numeros = []
-// alert("Preciso que voce digite 10 números.")
-// for(i = 1; i < 11; i++){
-// var numero = parseInt(prompt("Digite o " + i + "º número."))
-// numeros.push(numero)
-// }
-// document.write(numeros + "<br>")
+15- Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números ímpares
+
+var pares = 0
+var impares = 0
+alert("Preciso que voce digite 10 números.")
+for(i = 1; i < 11; i++){
+ var numero = parseInt(prompt("Digite o " + i + "º número."))
+
+ if(numero % 2 === 0){
+   pares++
+ }else{
+    impares++
+   }
+ }
+document.write(`Quantidade de números pares: ${pares} <br>`);
+document.write(`Quantidade de números ímpares: ${impares}`);
 
 
-for()
-if(numeros % 2 == 0){
-  document.write(numeros)
-}else{
-  document.write("não é par")
-}
-________________________________________________________
+16- Gere a sequência de Fibonacci até o n-ésimo termo.
 
-let contagemPares = 0;
-let contagemImpares = 0;
-
-// Pedir para o usuário digitar 10 números
-for (let i = 0; i < 10; i++) {
-    let numero = parseInt(prompt("Digite um número inteiro:"));
-
-    // Verificar se o número é par ou ímpar
-    if (numero % 2 === 0) {
-        contagemPares++;
-    } else {
-        contagemImpares++;
+  function fibonacci(n) {
+    
+    var fib = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
     }
+
+    return fib;
 }
 
-// Mostrar o resultado
-document.write(`Quantidade de números pares: ${contagemPares} <br>`);
-document.write(`Quantidade de números ímpares: ${contagemImpares}`);
+var n = 10; 
+var resultado = fibonacci(n);
+document.write(resultado);
